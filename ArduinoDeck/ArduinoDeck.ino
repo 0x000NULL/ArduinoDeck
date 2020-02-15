@@ -16,9 +16,9 @@
    https://github.com/williamtavares/Arduino-Uno-NumPad
 */
 
-#include <Adafruit_GFX.h>
+#include <Elegoo_GFX.h>
 #include <TouchScreen.h>
-#include <Adafruit_TFTLCD.h>
+#include <Elegoo_TFTLCD.h>
 #include <SPI.h>
 #include <SD.h>
 #include <string.h>
@@ -75,7 +75,7 @@ TouchScreen ts = TouchScreen(XP, YP, XM, YM, 364);
 //2.4 = 240 x 320
 //Height 319 to fit on screen
 
-Adafruit_TFTLCD tft(LCD_CS, LCD_CD, LCD_WR, LCD_RD, LCD_RESET);
+Elegoo_TFTLCD tft(LCD_CS, LCD_CD, LCD_WR, LCD_RD, LCD_RESET);
 
 //Import graphics
 extern uint8_t crossout[];
@@ -122,7 +122,7 @@ double R3 = R2 + BOXSIZE + padding;
 int col[] = {C1,C2,C3,C4,C5}; 
 int row[] = {R1,R2,R3};
 
-String files[] = {"Discord.bmp","Spotify.bmp","VolDown.bmp","VolUp.bmp","OBS.bmp","Mic0.bmp","Disabled.bmp","Disabled.bmp","Disabled.bmp","Disabled.bmp","Disabled.bmp","Disabled.bmp","Disabled.bmp","Disabled.bmp","Play.bmp"};
+String files[] = {"Scene 1 - On.bmp","Scene 2 - On.bmp","Scene 3 - On.bmp","Scene 4 - On.bmp","Scene 5 - On.bmp","Scene 1 - On.bmp","Scene 2 - On.bmp","Scene 3 - On.bmp","Scene 4 - On.bmp","Scene 5 - On.bmp","Hotkey.bmp","Source - On.bmp","Source - off.bmp","Record - On.bmp","Stream - On.bmp",};
 int Buttons[] = {Button1,Button2,Button3,Button4,Button5,Button6,Button7,Button8,Button9,Button10,Button11,Button12,Button13,Button14,Button15};
 
 void setup() {
