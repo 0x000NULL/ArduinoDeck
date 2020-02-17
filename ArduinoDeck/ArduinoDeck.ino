@@ -122,7 +122,7 @@ double R3 = R2 + BOXSIZE + padding;
 int col[] = {C1,C2,C3,C4,C5}; 
 int row[] = {R1,R2,R3};
 
-String files[] = {"Scene1On.bmp","Scene2On.bmp","Scene3On.bmp","Scene4On.bmp","Scene5On.bmp","Scene1On.bmp","Scene2On.bmp","Scene3On.bmp","Scene4On.bmp","Scene5On.bmp","Hotkey.bmp","SourceOn.bmp","Sourceoff.bmp","RecordOn.bmp","StreamOn.bmp",};
+String files[] = {"Scene1.bmp","Scene2.bmp","Scene3.bmp","Scene4.bmp","Scene5.bmp","Scene1On.bmp","Scene2On.bmp","Scene3On.bmp","Scene4On.bmp","Scene5On.bmp","Mic0.bmp","Hotkey.bmp","AppOBS.bmp","RecordOn.bmp","StreamOn.bmp"};
 int Buttons[] = {Button1,Button2,Button3,Button4,Button5,Button6,Button7,Button8,Button9,Button10,Button11,Button12,Button13,Button14,Button15};
 
 void setup() {
